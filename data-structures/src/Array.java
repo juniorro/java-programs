@@ -99,6 +99,20 @@ public class Array {
     }
 
     /**
+     This finds all the indexes an element in the array appears.
+     @return void
+     @exception ---
+     @see
+     **/
+    public void linearSearch(int element){
+        System.out.print("This value in the array was found at index: ");
+        for(int i = 0; i < size; i++){
+            if(array[i] == element)
+                System.out.print(i + ",");
+        }
+    }
+
+    /**
      This method inserts a value in the array at the end of it
      @return void
      @exception ---
@@ -139,6 +153,9 @@ public class Array {
 
         //call printTheArray() method
         array.printTheArray();
+
+        //call linearSearch() method
+        array.linearSearch(6);
 
 
 
