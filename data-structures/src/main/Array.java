@@ -1,3 +1,5 @@
+package main;
+
 /**
  * Array Data Structures.
  *
@@ -61,8 +63,8 @@ public class Array {
         if(index < size) {
             return array[index];
         }else {
-            System.out.println("Element not found at index.");
-            return 0;
+            System.out.println("Element not found at specified index.");
+            return -1;
         }
     }
 
